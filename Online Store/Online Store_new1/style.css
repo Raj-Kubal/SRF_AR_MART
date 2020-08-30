@@ -1,0 +1,251 @@
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: centre;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+	
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.search-container input[type=text] {
+  
+  float: center;
+  padding: 5px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 75%;
+    padding: 25px 0px;
+}
+.col h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #8E44AD;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 15px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #633974;
+}
+.header{
+    background: radial-gradient(#EBDEF0,#D7BDE2);
+}
+.header .row{
+    margin: 50px;
+}
+.categories{
+    margin: 60px 0;
+}
+.col-3{
+    flex-basis: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-4{
+    flex-basis: 25px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 40px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+h4{
+    font-size: 110%;
+    margin-bottom: auto;
+}
+p{
+    margin: auto;
+}
+.title{
+    font-size: 185%;
+    text-align: center;
+    margin: 0 auto 25px;
+    position: relative;
+    line-height: 50px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #8E44AD;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.offer{
+    background: radial-gradient(#EBDEF0,#D7BDE2);
+    margin: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 30px;
+}
+small{
+    color: #555;
+}
+/* login form */
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  display:inline-block;
+  width:50%;
+ 
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  text-align:center;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 50%;
+	text-align:center-left;
+  }
+}
+.product{
+    margin: 25px;
+    padding: 50px;
+    border-bottom-color: black;
+    border-bottom-width: thick;
+    display: inline-block;
+}
+.features{
+    direction: ltr;
+    display: inline-block;
+    font-size: 110%;
+}
+.btn2{
+    display: inline-block;
+    background: #F3E5F5;
+    color: #000;
+    padding: 20px;
+    border: thick;
+    border-bottom-color: #000;
+    border-radius: 0px;
+    transition: background 0.5s;
+}
+.btn2:hover{
+    background: #E1BEE7;
+}
+

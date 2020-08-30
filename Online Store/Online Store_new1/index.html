@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta chatset ="UTF-8">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+	<script src = "jscript.js"></script>
+</head>
+<body>
+    
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+             <img src="images/online_store_logo.png" width="200px">
+			 
+        </div>
+		<div class="search-container">
+          <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Go</button>
+          </form>
+        </div>
+        <nav>
+            <ul>
+			    
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><button class="open-button" onclick="openForm()">Account</button></li>
+            </ul>
+        </nav>
+         <img src="images/cart.png" width="40px" height="40px">
+    </div>
+     <div class="row">
+         <div class="col-2">
+             <h1>Give Your Workout<br>A New Style!</h1>
+             <p>Success isn't always about greatness. It's about consistency,Consistent<br> hardwork gains success. greatness will come. </p>
+             <a href="" class="btn">Explore Now &#8594;</a>
+         </div>
+         <div class="col-2">
+             <img src="images/image1.png">
+         </div>
+    </div>
+  </div>
+</div> 
+
+<!-----featured categories------->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="images/category-1.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-2.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-3.jpg">
+        </div>
+    </div>
+  </div>
+</div>
+<!-----products------->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg" id="items" onmouseover = "upDate()" onmouseout = "unDo()">
+            <h4>Red PUMA T-Shirt</h4>
+            <p>Rs.3800.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>Black Shoes</h4>
+            <p>Rs.2900.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Grey Track Pants</h4>
+            <p>Rs.2100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4>Blue PUMA T-Shirt</h4>
+            <p>Rs.3800.00</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Grey Ankel Shoes</h4>
+            <p>Rs.4200.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4>PUMA Black T-Shirt</h4>
+            <p>Rs.1200.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-7.jpg">
+            <h4>HRX Socks(pack of 3)</h4>
+            <p>Rs.799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-8.jpg">
+            <h4>FOSSIL Watch Black</h4>
+            <p>Rs.3999.00</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>ROADSTER Watch</h4>
+            <p>Rs.2799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>HRX Black Shoes</h4>
+            <p>Rs.3499.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Grey Running Shoes</h4>
+            <p>Rs.2999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>NIKE Men's Joggers </h4>
+            <p>Rs.2499.00</p>
+        </div>
+    </div>
+</div>  
+<!------offer-------> 
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+             <p>Exclusively Available on Online Store</p>
+             <h1>Smart Band 4</h1>
+             <small>The Mi Smart Band 4 features a 39.9% (larger than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as it can be.</small>
+            </div>
+            <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+    </div>
+</div>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</body>
+</html>
