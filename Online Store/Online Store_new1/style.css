@@ -8,6 +8,12 @@
     align-items: centre;
     padding: 20px;
 }
+
+video {
+  max-width: 50%;
+  height: auto;
+}
+
 nav{
     flex: 1;
     text-align: right;
