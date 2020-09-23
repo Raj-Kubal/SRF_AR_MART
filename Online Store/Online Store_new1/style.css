@@ -230,7 +230,7 @@ span.psw {
   }
 }
 .product{
-    margin: 25px;
+    margin: 5px;
     padding: 0px;
     border-bottom-color: black;
     border-bottom-width: thick;
@@ -239,7 +239,7 @@ span.psw {
 .features{
     direction: ltr;
     display: inline-block;
-    font-size: 110%;
+    font-size: 100%;
 }
 .btn2{
     display: inline-block;
