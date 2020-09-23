@@ -230,8 +230,8 @@ span.psw {
   }
 }
 .product{
-    margin: 15px;
-    padding: 10px;
+    margin: 5px;
+    padding: 0px;
     border-bottom-color: black;
     border-bottom-width: thick;
     display: inline-block;
