@@ -231,7 +231,7 @@ span.psw {
 }
 .product{
     margin: 25px;
-    padding: 10px;
+    padding: 0px;
     border-bottom-color: black;
     border-bottom-width: thick;
     display: inline-block;
