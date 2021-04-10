@@ -375,16 +375,16 @@ th:last-child{
     align-self: center;
 }
 #capture{
-    min-width: 300px;
-    min-height: 50px;
+    min-width: 320px;
+    min-height: 3200px;
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
     
 }
 #canvas{
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 320px;
+    min-height: 320px;
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
