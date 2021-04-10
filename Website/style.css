@@ -377,7 +377,14 @@ th:last-child{
 #capture{
     min-width: 150px;
     min-height: 150px;
-    margin-bottom: 20%;
+    margin-bottom: 0;
+    align-self: center;
+    border: 2px solid #8E44AD;
+}
+#canvas{
+    min-width: 150px;
+    min-height: 150px;
+    margin-bottom: 0;
     align-self: center;
     border: 2px solid #8E44AD;
 }
