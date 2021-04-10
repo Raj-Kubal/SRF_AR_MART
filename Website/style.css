@@ -368,15 +368,15 @@ th:last-child{
     background:radial-gradient(#EBDEF0,#D7BDE2);
 }
 #player{
-    min-height: 280px;
+    min-height: 320px;
     min-width:320px;
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
 }
 #capture{
-    min-width: 300px;
-    min-height: 30px;
+    min-width: 150px;
+    min-height: 150px;
     margin-bottom: 20%;
     align-self: center;
     border: 2px solid #8E44AD;
