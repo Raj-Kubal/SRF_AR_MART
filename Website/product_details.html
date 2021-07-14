@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta chatset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products Details-Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="start_pg.html"> <img src="images/online_store_logo.png" width="200px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="start_pg.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"> <img src="images/cart.png" width="40px" height="40px"></a>
+    </div>
+</div>
+<!----------single product details--------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>Red printed T-Shirt by HRX</h1>
+            <h4>Rs.2900.00</h4>
+            <select>
+                <option>Select size</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <input type="number" value="1">
+            <div class="row">
+                    <div class="col-1">
+                        <div class="container2">
+  						<img src="images/AR_Shop_logo.jpg" alt="Avatar" class="image">
+  						<div class="overlay">Click to view in 3d or to try it</div>
+						</div>
+                        <a href="" class="btn">Wishlist</a>
+                        <a href="cart.html" class="btn">Add To Cart</a>
+                    </div>
+            </div>
+            <h3>Product Details</h3>
+            <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt.Team it with a pair shorts for your morning workout or a denims for an evening out with your friends.</p>
+        </div>
+    </div>
+</div> 
+<!----------related products--------->   
+<div class="small-container">
+    <div class="row row-2">
+    <h2>Related Products </h2>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Grey Track Pants</h4>
+            <p>Rs.2100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4>Blue PUMA T-Shirt</h4>
+            <p>Rs.3800.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Grey Ankel Shoes</h4>
+            <p>Rs.4200.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>NIKE Men's Joggers </h4>
+            <p>Rs.2499.00</p>
+        </div>
+    </div> 
+    </div>
+<!----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>Your Account</li>
+                    <li>About Us</li>
+                    <li>100% Purchase Protection</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+            <img src="images/34149219.png">
+            <p>Our purpose is to Sustainably make the Pleasure and Benefits of Lifestyle Accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------js for product gallery----------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+            SmallImg[0].onclick = function(){
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function(){
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function(){
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function(){
+                ProductImg.src = SmallImg[3].src;
+            }
+            
+    </script>
+</body>
+</html>
