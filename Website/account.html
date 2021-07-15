@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta chatset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products Details-Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="start_pg.html"><img src="images/online_store_logo.png" width="200px"></a> 
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="start_pg.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+         <a href="cart.html"><img src="images/cart.png" width="40px" height="40px"></a>
+         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
+    </div>
+</div>
+<!-----js for toggle menu------->
+<script type="text/javascript">
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<!---------account page------------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+            <div class="col-2">
+                <img src="images/profile.jpg" width="60%" >
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+                    
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>       
+    </div>
+<!----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>Your Account</li>
+                    <li>About Us</li>
+                    <li>100% Purchase Protection</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+            <img src="images/34149219.png">
+            <p>Our purpose is to Sustainably make the Pleasure and Benefits of Lifestyle Accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------js for toggle form----->
+    
+    <script> 
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var indicator = document.getElementById("indicator");
+        
+        function register(){
+            
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(40px)";
+        }
+        function login(){
+            
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(-40px)";
+        }
+    </script>
+    
+</body>
+</html>

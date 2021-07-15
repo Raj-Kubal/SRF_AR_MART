@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta chatset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+             <a href="start_pg.html"><img src="images/online_store_logo.png" width="200px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="start_pg.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"> <img src="images/cart.png" width="40px" height="40px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" >
+    </div>
+  </div>
+</div>
+<!-----js for toggle menu------->
+<script type="text/javascript">
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/casual.jpg" width="100%" class="offer-img">
+            </div>
+            <div class="col-2">
+             <h1>Delicate clothes for delicate you</h1>
+             <small>Shop your outfit style<br></small>
+            <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer">
+<div class="row">
+         <div class="col-2">
+             <h1>Give Your Workout<br>A New Style!</h1>
+             <p>Success isn't always about greatness. It's about consistency,Consistent<br> hardwork gains success. greatness will come. </p>
+             <a href="" class="btn">Explore Now &#8594;</a>
+         </div>
+         <div class="col-2">
+             <img src="images/image1.png">
+         </div>
+    </div>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/ethnic_coup.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+             <h1>Take pride in wearing ethnic...</h1>
+             <small>Form your own style with ethnicity<br></small>
+            <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer">
+<div class="row">
+         <div class="col-2">
+             <h1>Bring power to your steps!</h1>
+             <p>Go faster, go stronger, never stop. </p>
+             <a href="" class="btn">Explore Now &#8594;</a>
+         </div>
+         <div class="col-2">
+             <img src="images/shoes-dp-dp-20201009-md-mens-halves2.webp" width="60%">
+         </div>
+    </div>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/Best-Sandals.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+             <h1>Walk the line</h1>
+             <small>Footwear to last you a lifetime<br></small>
+            <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer">
+<div class="row">
+         <div class="col-2">
+             <h1>Write your Own Time...</h1>
+             <p>World-class Style at best price </p>
+             <a href="" class="btn">Explore Now &#8594;</a>
+         </div>
+         <div class="col-2">
+             <img src="images/watches.png" width="60%" >
+         </div>
+    </div>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/earring.png" width="60%" class="offer-img">
+            </div>
+            <div class="col-2">
+             <h1>Add Elegance to your appearance.</h1>
+             <small>Jewels that are close to your heart.<br></small>
+            <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----featured categories------->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="images/category-1.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-2.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-3.jpg">
+        </div>
+    </div>
+  </div>
+</div>
+<!-----products------->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="red_puma.html"><img src="images/product-1.jpg"></a>
+            <h4>Red T-Shirt</h4>
+            <p>Rs.2900.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>Black Shoes</h4>
+            <p>Rs.2900.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Grey Track Pants</h4>
+            <p>Rs.2100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4>Blue PUMA T-Shirt</h4>
+            <p>Rs.3800.00</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Grey Ankel Shoes</h4>
+            <p>Rs.4200.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4>PUMA Black T-Shirt</h4>
+            <p>Rs.1200.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-7.jpg">
+            <h4>HRX Socks(pack of 3)</h4>
+            <p>Rs.799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-8.jpg">
+            <h4>FOSSIL Watch Black</h4>
+            <p>Rs.3999.00</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>ROADSTER Watch</h4>
+            <p>Rs.2799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>HRX Black Shoes</h4>
+            <p>Rs.3499.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Grey Running Shoes</h4>
+            <p>Rs.2999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>NIKE Men's Joggers </h4>
+            <p>Rs.2499.00</p>
+        </div>
+    </div>
+</div>  
+<!----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>Your Account</li>
+                    <li>About Us</li>
+                    <li>100% Purchase Protection</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+            <img src="images/34149219.png">
+            <p>Our purpose is to Sustainably make the Pleasure and Benefits of Lifestyle Accessible to the many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
